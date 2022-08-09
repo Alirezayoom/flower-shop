@@ -1,4 +1,3 @@
-import PreviousMap from "postcss/lib/previous-map";
 import { useState } from "react";
 import NavCartButton from "./NavCartButton";
 
@@ -22,11 +21,11 @@ const Navbar = (props) => {
                 
                 <div onClick={iconHandler} className="text-2xl font-light ml-4 lg:hidden cursor-pointer w-min">
                     {iconIsShow ? <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </div> : <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h7" />
                         </svg>
                     </div>}
