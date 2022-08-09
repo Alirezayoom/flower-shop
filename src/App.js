@@ -1,21 +1,39 @@
-import { Fragment } from "react";
-import Header from "./components/Header";
-import About from "./components/main/About";
-import Main from "./components/main/Main";
-import Support from "./components/main/Support";
-import Navbar from "./components/Navbar";
+import { useState } from "react";
 
-function App() {
+import { Fragment } from "react";
+import Header from "./components/Layout/Header";
+import About from "./components/Layout/About";
+import Main from "./components/Layout/main/Main";
+import Support from "./components/Layout/Support";
+import Navbar from "./components/Layout/Navbar";
+import Footer from "./components/Layout/Footer";
+import Footer2 from "./components/Layout/Footer2";
+import Cart from "./components/Cart/Cart";
+import CartProvider from "./store/CartProvider";
+
+const App = () => {
+  const [cartIsShow, setCartIsShow] = useState(false)
+
+  const showCartHandler = () => {
+    setCartIsShow(true)
+  }
+  const hideCartHandler = () => {
+    setCartIsShow(false)
+  }
+
   return (
-    <Fragment>
-      <Navbar />
+    <CartProvider>
+      {cartIsShow && <Cart onHide={hideCartHandler} />}
+      <Navbar onShow={showCartHandler}/>
       <Header />
       <main>
         <About />
         <Main />
         <Support />
       </main>
-    </Fragment>
+      <Footer />
+      <Footer2 />
+    </CartProvider>
   );
 }
 
