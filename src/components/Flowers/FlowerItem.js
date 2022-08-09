@@ -8,6 +8,7 @@ const FlowerItem = (props) => {
     const amountNumHandler = amount => {
         cartCtx.addItem({
          id: props.id,
+         aks: props.aks,
          name: props.name,
          amount: amount,
          price: props.price   
