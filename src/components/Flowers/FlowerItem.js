@@ -16,11 +16,11 @@ const FlowerItem = (props) => {
     }
 
     return (
-        <div className=" min-w-[230px] max-h-[350px] border-zinc-900 text-center  mx-4 mb-6 ">
+        <div className=" min-w-[230px] max-h-[350px] border-zinc-900 text-center  mx-4 mb-12 ">
 
 
-            <div className={`w-auto h-[260px] ${ props.bgc} flex justify-center items-center`}>
-                <img src={props.aks} alt="gol" className='w-[150px] ' />
+            <div className={`w-auto h-[260px] bg-gray-100 flex justify-center items-center`}>
+                {props.aks}
             </div>
             <div className="py-2  ">
                 <h6 className="text-sm text-gray-800 font-bold">{props.name}</h6>

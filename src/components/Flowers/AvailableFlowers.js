@@ -11,14 +11,14 @@ import p8 from '../../assets/8.png'
 
 
 const DUMMY_FLOWERS = [
-    {id: 1, name: "Sunflower Harvest", price:"12.99", bgc:"bg-purple-100", aks:p1},
-    {id: 2, name:"A Burst of Sunshine", price:"29.99", bgc:"bg-red-100", aks:p2},
-    {id: 3, name:"Delightfull Daisies", price:"18.00", bgc:"bg-blue-100", aks:p3},
-    {id: 4, name:"Pretiest Petals", price:"30.99", bgc:"bg-green-100", aks:p8},
-    {id: 5, name:"Lovely Roses", price:"14.99", bgc:"bg-orange-100", aks:p5},
-    {id: 6, name:"Polka Dot", price:"11.99", bgc:"bg-blue-100", aks:p4},
-    {id: 7, name:"Simple Elegance ", price:"17.99", bgc:"bg-green-100", aks:p7},
-    {id: 8, name:"Pinch of Pink", price:"25.00", bgc:"bg-lime-100", aks:p6},
+    {id: 1, name: "Sunflower Harvest", price:"12.99", aks:<img src={p2} alt="p2" className='w-[150px] '/>},
+    {id: 2, name:"A Burst of Sunshine", price:"29.99", aks:<img src={p3} alt="p3" className='w-[150px] '/>},
+    {id: 3, name:"Delightfull Daisies", price:"18.00", aks:<img src={p8} alt="p8" className='w-[150px] '/>},
+    {id: 4, name:"Pretiest Petals", price:"30.99", aks:<img src={p5} alt="p5" className='w-[150px] '/>},
+    {id: 5, name:"Lovely Roses", price:"14.99", aks:<img src={p4} alt="p4" className='w-[150px] '/>},
+    {id: 6, name:"Polka Dot", price:"11.99", aks:<img src={p7} alt="p7" className='w-[150px] '/>},
+    {id: 7, name:"Simple Elegance ", price:"17.99", aks:<img src={p1} alt="p1" className='w-[150px] '/>},
+    {id: 8, name:"Pinch of Pink", price:"25.00", aks:<img src={p6} alt="p6" className='w-[150px] '/>},
     
 ]
 
@@ -28,7 +28,7 @@ const flowers = DUMMY_FLOWERS.map(flower => (
     id={flower.id}
     name={flower.name}
     price={flower.price}
-    bgc={flower.bgc}
+    
     aks={flower.aks}
     />
 ))

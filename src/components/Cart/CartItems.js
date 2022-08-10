@@ -1,7 +1,7 @@
 const CartItems = (props) => {
     return (
         <div className="mx-4 border-2 my-2 p-2 flex justify-between">
-            <div className="w-[50px] h-[50px] bg-blue-300">hi</div>
+            <div className="w-[50px] h-[50px] ">{props.aks}</div>
             <div>
                 <h2 className="font-semibold text-sm">{props.name}</h2>
                 <p>{props.price}</p>
