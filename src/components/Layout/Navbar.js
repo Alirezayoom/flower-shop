@@ -16,8 +16,8 @@ const Navbar = (props) => {
     }
 
     return (
-        <nav className="w-full h-[70px] bg-white  shadow-md z-40 ">
-            <div className="max-w-[1080px] h-[70px] relative grid grid-cols-3 mx-auto items-center" >
+        <nav className="w-full h-[60px] bg-white/95 shadow-md z-40 fixed">
+            <div className="max-w-[1080px] h-[60px] relative grid grid-cols-3 mx-auto items-center" >
                 
                 <div onClick={iconHandler} className="text-2xl font-light ml-4 lg:hidden cursor-pointer w-min">
                     {iconIsShow ? <div>
@@ -36,7 +36,7 @@ const Navbar = (props) => {
                 lg:pb-0 pb-10 lg:shadow-none shadow-md shadow-gray-400
                 lg:pt-0 pt-2 ${iconIsShow ? 'bg-white' : 'hidden'}`}
                 >{links.map(link=>(
-                    <li className="lg:pr-4 mr-2  " key={link.name}><a className="font-light lg:py-0 py-4 flex justify-center lg:hover:bg-transparent hover:bg-gray-200 " href={link.link}>{link.name}</a></li>
+                    <li className="lg:pr-4 mr-2  " key={link.name}><a onClick={iconHandler} className="font-light lg:py-0 py-4 flex justify-center lg:hover:bg-transparent hover:bg-gray-200 " href={link.link}>{link.name}</a></li>
                 ))}</ul>
 
                 <h3 className="mx-auto font-extrabold font-serif text-xl">Flowers.</h3>

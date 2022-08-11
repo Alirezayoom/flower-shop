@@ -34,8 +34,10 @@ const Cart = props => {
     return (
         <Modal onHide={props.onHide}><div>
             <div className="font-semibold text-xl m-4 border-b-2"><p className="mb-4">Your Cart</p></div>
-
+            <div className="max-h-[18rem] overflow-auto">
             {cartItems}
+            </div>
+            
             {!hasItems && <div className="text-center">
                 <p>oops!</p>
                 <p>Your cart is empty</p>

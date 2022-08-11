@@ -2,11 +2,11 @@ import flower from '../../assets/home.jpg'
 
 const Header = () => {
     return (
-        <header className="w-full h-[660px] bg-gray-200 flex justify-center  " id="home">
+        <header className="w-full h-[720px] bg-gray-200 flex justify-center  " id="home">
                 <div>
                     
                     <img src={flower} alt="flower" className='object-cover w-full h-full relative'/>
-                    <div className='bg-black absolute w-full h-[660px] top-[70px] left-0 opacity-40' />
+                    <div className='bg-black absolute w-full h-[720px] top-0 left-0 opacity-40' />
                 </div>
                 
                 <div className='absolute items-center top-[19rem] text-center '>
