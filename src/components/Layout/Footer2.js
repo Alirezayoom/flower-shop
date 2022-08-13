@@ -1,7 +1,7 @@
 const Footer2 = () => {
     return (
-        <div className="max-w-[1080px] mx-auto text-center text-sm text-gray-500">
-            All right reserved 2022
+        <div className="max-w-[1080px] mx-auto py-4 text-center text-sm text-gray-500">
+            &copy;2022 All right reserved 
         </div>
     )
 }

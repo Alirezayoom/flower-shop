@@ -31,7 +31,7 @@ const Navbar = (props) => {
                     </div>}
                 </div>
             
-                <ul className={`lg:static absolute lg:flex lg:justify-start top-[70px] 
+                <ul className={`lg:static absolute lg:flex lg:justify-start top-[60px] 
                 lg:bg-transparent bg-white lg:w-auto w-full pl-4 z-20
                 lg:pb-0 pb-10 lg:shadow-none shadow-md shadow-gray-400
                 lg:pt-0 pt-2 ${iconIsShow ? 'bg-white' : 'hidden'}`}
